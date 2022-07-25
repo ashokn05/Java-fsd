@@ -22,8 +22,10 @@ public class arrayrotation {
 		RA r = new RA();
 		int arr[] = { 1, 9, 4, 5, 3, 7, 3, 0 };
 		r.rotate(arr, 5);
+		System.out.println("Array after rotation:");
 		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i] + " ");
+			System.out.print("  " + arr[i]);
 		}
+		
 	}
 }
