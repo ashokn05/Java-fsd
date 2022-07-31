@@ -17,8 +17,10 @@ public class validationemail {
 		emails.add("@edu.com");
 		emails.add("2233gmailcom");
 		String validationemail = null;
+		
 		System.out.println("Enter the email to search");
 		Scanner sc = new Scanner(System.in);
+		
 		validationemail = sc.nextLine();
 
 		String regex = "^(.+)@(.+)$";

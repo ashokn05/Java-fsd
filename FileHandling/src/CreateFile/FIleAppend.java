@@ -6,7 +6,7 @@ import java.io.IOException;
 public class FIleAppend {
 	public static void main(String[] args) {
 		
-		String data = "This data is appended";
+		String data = "Hyderabad";
 		
 		try {
 			FileWriter output = new FileWriter("FileHandling.txt", true);
