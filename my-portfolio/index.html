@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PortFolio - Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+<!-- Navbar  Section Start -->
+<header>
+    <a href="#" class="logo">Port <span> Folio</span>.</a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="bx bx-moon" id="darkmode"></div>
+    </ul>
+</header>
+<!-- Navbar Section End -->
+<!-- Home Section Start -->
+<section class="home" id="home">
+    <div class="social">
+        <a href="https://github.com/ashokn05"><i class='bx bxl-github'></i></a>
+        <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+    </div>
+    <div class="home-img">
+        <img src="IMG_20220418_214412.jpg" alt="">
+    </div>
+    <div class="home-text">
+        <span>Hello, I'm</span>
+        <h1> Ashok </h1>
+        <h2>Full stack Developer</h2>
+        <p></p>
+        <a href="cv.pdf" class="btn">Download CV</a>
+
+    </div>
+</section>
+<!-- Home Section End -->
+<!-- About Section Start -->
+
+<section class="about" id="about">
+    <div class="heading">
+        <h2>About Me</h2>
+        <span>Introduction</span>
+    </div>
+
+    <div class="about-container">
+        <div class="about-img">
+            <img src="IMG_20220418_214412.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <p>I'm a ece engineer turned into full stacck developer for the betterment of my future & growth. Keen to learn about new things & keep myself updated with the new technologies. I like to work on Java and testing projects by using my skills like HTML, CSS, JavaScript, ReactJS, Bootstrap, NodeJS, GitHub, Selenium, hibernate, spring boot, docker etc. Currently learnig and practicing my skills to the next level.</p>
+            <div class="information">
+                <div class="info-box">
+                    <i class='bx bxs-user'></i>
+                    <span>N Ashok</span>
+                </div>
+
+                <div class="info-box">
+                    <i class='bx bxs-phone'></i>
+                    <span>+91 7997581228</span>
+                </div>
+
+                <div class="info-box">
+                    <i class='bx bxs-envelope'></i>
+                    <span>ashokn1290@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
+
+<!-- Skills Section Start -->
+
+<section class="skills" id="skills">
+    <div class="heading">
+        <h2>Skills</h2>
+        <span>My Skills</span>
+    </div>
+
+    <div class="skills-container">
+        <div class="bars">
+
+            <div class="skills-text">
+                <h3>HTML, CSS, JAVA SCRIPT, ANGULAR JS, CORE JAVA </h3>
+                <h3>MAVEN, SPRING BOOT, SELENIUM, MySQL</h3>
+                
+
+            </div>
+        </div>
+        <div class="skills-img">
+            <img src="IMG_20220418_214412.jpg" alt="Skill">
+        </div>
+    </div>
+</section>
+<!-- Skills Section End -->
+<!-- Services Section Start -->
+<section class="services" id="services">
+    <div class="heading">
+        <h2>Services</h2>
+        <span>Our Services</span>
+    </div>
+    <div class="services-content">
+
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bx-server'></i>
+            <h3>Backend Development</h3>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-brush'></i>
+            <h3>FRONTEND DEVELOPMENT</h3>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+</section>
+<!-- Services Section End -->
+
+<!-- Contact Section Start -->
+<section class="contact" id="contact">
+    <div class="heading">
+        <h2>Contact</h2>
+        <span>Connect With Us</span>
+    </div>
+    <div class="contact-form">
+        <form onsubmit="sendEmail(); reset();return false;">
+            <input type="text" placeholder="Your Name">
+            <input type="email" name="" id="" placeholder="Your Email">
+            <textare name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textare>
+                                <input type="button" value="Send" class="contact-button">
+                                </form>
+                            </div>
+                            <script src="https://smtpjs.com/v3/smtp.js"></script>
+                            <script> 
+                              function sendEmail(){
+                                Email.send({
+    Host : "smtp.gmail.com",
+    Username : "ashokn1290@gmail.com",
+    Password : "password",
+    To : 'ashokn1290@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+                              }
+                            </script>
+                            </section>
+                            <!-- Contact Section End -->
+                         <div class="footer">
+                                <h2>Follow Us</h2>
+                                <div class="footer-social">
+                                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>                       
+                                    <a href="https://www.instagran.com/"><i class='bx bxl-instagram'></i></a>
+                                </div>
+
+                            </div>
+
+                            <div class="copyright">
+                                © Portfolio | All Right Reserved.</p>
+                            </div>
+                            <!-- Javascript -->
+                            <script src="script.js"></script>
+</body>
+
+</html>
